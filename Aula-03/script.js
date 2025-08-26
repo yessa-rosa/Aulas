@@ -15,11 +15,35 @@ while (contagem < 10){
     contagem++
 }
 
-//Exercicio 1
-var numeroEscolha = prompt("Digite um numero:")
 
-for(var i = 0; i <= numeroEscolha; i++){
-    console.log("Contagem:" , i)
+//FUNÇÔES
+
+//Cria a função
+function bemVindo(){
+    var nome = prompt("Nome:")
+    console.log("Olá,", nome)
 }
 
-//Exercicio 2
+// Chama a função
+bemVindo()
+
+//Função com parametros
+function calcularIdade(idade){
+    alert("Sua idade é:", idade)
+}
+
+calcularIdade(16)
+calcularIdade(100)
+
+
+//FUNÇÔES COM RETORNO
+
+function soma (valor1, valor2){
+let resultado = valor1 + valor2
+
+return resultado
+}
+
+var valorSomado = soma(7, 6)
+
+console.log("A soma deu:", valorSomado);
